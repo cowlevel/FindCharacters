@@ -10,7 +10,15 @@ namespace FindCharacters
     {
         static void Main(string[] args)
         {
+            string input;
 
+            Console.Write("Enter word(s): ");
+            input = Console.ReadLine();
+
+            Console.WriteLine(input);
+
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
         }
     }
 }

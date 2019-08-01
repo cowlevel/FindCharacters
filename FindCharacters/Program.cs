@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FindCharacters
 {
@@ -10,12 +6,15 @@ namespace FindCharacters
     {
         static void Main(string[] args)
         {
-            string input;
+            CharacterFinder finder = new CharacterFinder();
 
             Console.Write("Enter word(s): ");
-            input = Console.ReadLine();
+            finder.WordsInput = Console.ReadLine();
 
-            Console.WriteLine(input);
+            Console.Write("Enter character to find: ");
+            finder.CharacterInput = Console.ReadLine().ToString()[0];
+
+            Console.WriteLine("Number of '{0}' in entered word(s): {1}", finder.CharacterInput, finder.CharacterCount);
 
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();

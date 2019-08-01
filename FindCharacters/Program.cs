@@ -10,6 +10,7 @@ namespace FindCharacters
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

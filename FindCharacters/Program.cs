@@ -17,6 +17,7 @@ namespace FindCharacters
             Console.WriteLine("Number of '{0}' in entered word(s): {1}", finder.CharacterInput, finder.CharacterCount);
 
             Console.WriteLine("Program End.");  //Test github
+            Console.WriteLine();
             Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
